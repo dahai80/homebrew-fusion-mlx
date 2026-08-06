@@ -1,8 +1,8 @@
 class FusionMlx < Formula
     desc "Unified local model management for Apple Silicon"
     homepage "https://github.com/dahai80/fusion-mlx"
-    url "https://github.com/dahai80/fusion-mlx/archive/refs/tags/v0.7.11.tar.gz"
-    sha256 "3aead6a85a20b0180d85f89488c836630eed33819eba1121644ff1c5b5443c36"
+    url "https://github.com/dahai80/fusion-mlx/archive/refs/tags/v0.8.0.tar.gz"
+    sha256 "f6c11a761862dbde2b2c9f3d9319e0311499f521d0cc9db76d3072deb6bed729"
     license "Apache-2.0"
     head "https://github.com/dahai80/fusion-mlx.git", branch: "main"
 
