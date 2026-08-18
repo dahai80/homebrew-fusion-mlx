@@ -1,8 +1,8 @@
 class FusionMlx < Formula
     desc "Unified local model management for Apple Silicon"
     homepage "https://github.com/dahai80/fusion-mlx"
-    url "https://github.com/dahai80/fusion-mlx/archive/refs/tags/v0.8.19.tar.gz"
-    sha256 "39376a1b597a1aeb92d17cb3b9ac1a359ed230e7354f63edf7df1bf3df4626db"
+    url "https://github.com/dahai80/fusion-mlx/archive/refs/tags/v0.8.20.tar.gz"
+    sha256 "f0ea8632afd1e37d53e7ac3ba913509b83f66ec09ab8247980d89e82202c14a5"
     license "Apache-2.0"
     head "https://github.com/dahai80/fusion-mlx.git", branch: "main"
 
@@ -35,7 +35,7 @@ class FusionMlx < Formula
     resource "mlx-vlm" do
         url "https://github.com/Blaizzy/mlx-vlm.git",
             commit: "f96138eef1f5ce7fb5d97f8dd41a664a195b5659"
-        sha256 "6850b0e5d07bed32b3613d4c7da50e0fc36542239a5ff5188b524494e9edda75"
+        sha256 "d7c6c949f2291fac78203da0b3c354be4bc098d1dcd3dd80c8c92d03794c8ae3"
     end
 
     resource "dflash-mlx" do
