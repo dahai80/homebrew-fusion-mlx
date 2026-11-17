@@ -161,9 +161,9 @@ class FusionPluginsEcosystem < Formula
 
     def install
         venv = virtualenv_create(libexec, "python3.12")
-        wheels = resources.map do |r|
-            r.stage { Pathname.pwd / r.downloader.basename }
-        end
+        # Resource#stage unpacks archives (a wheel is a zip), so install from
+        # the cached downloads (original .whl files) instead.
+        wheels = resources.map(&:cached_download)
         system Formula["python@3.12"].opt_bin/"python3.12", "-m", "pip",
                "--python=#{libexec}/bin/python", "install", "--no-deps", *wheels
         bin.install libexec/"bin/fusion-plugin-server"
