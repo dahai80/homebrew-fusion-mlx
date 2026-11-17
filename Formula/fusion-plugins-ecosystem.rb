@@ -2,7 +2,7 @@ class FusionPluginsEcosystem < Formula
     desc "Fusion plugin ecosystem: registry, lifecycle, MCP server, Claude adaptation"
     homepage "https://github.com/dahai80/fusion-plugins-ecosystem"
     url "https://github.com/dahai80/fusion-plugins-ecosystem/archive/refs/tags/v0.10.0.tar.gz"
-    sha256 "44f44a82abf12659a2c5b092537fe8cd965fd5b8d867d49bed1d5ce0c9a08b07"
+    sha256 "f168bff048f800f8c68e3adcc2d1e1a0321fdd3b180b58be646a4a5e821dbad4"
     license "Apache-2.0"
     head "https://github.com/dahai80/fusion-plugins-ecosystem.git", branch: "main"
 
