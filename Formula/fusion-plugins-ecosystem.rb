@@ -8,6 +8,8 @@ class FusionPluginsEcosystem < Formula
 
     depends_on "python@3.12"
 
+    include Language::Python::Virtualenv
+
     # Install strategy: pip-install the release wheel into a private venv and
     # let pip resolve dependencies from PyPI. Homebrew's
     # virtualenv_install_with_resources only works with py3-none-any wheel
