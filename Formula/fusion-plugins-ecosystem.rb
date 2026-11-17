@@ -19,7 +19,11 @@ class FusionPluginsEcosystem < Formula
     def install
         venv = virtualenv_create(libexec, "python3.12")
         wheel = "https://github.com/dahai80/fusion-plugins-ecosystem/releases/download/v#{version}/fusion_plugins_ecosystem-#{version}-py3-none-any.whl"
-        system libexec/"bin/pip", "-v", "install", wheel
+        # virtualenv_create builds the venv without_pip on py3.12 — drive pip
+        # from the brewed python with --python targeting the venv (the same
+        # mechanism virtualenv_install_with_resources uses).
+        system Formula["python@3.12"].opt_bin/"python3.12", "-m", "pip",
+               "--python=#{libexec}/bin/python", "-v", "install", wheel
     end
 
     def caveats
