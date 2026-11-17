@@ -2,11 +2,13 @@ class FusionPluginsEcosystem < Formula
     desc "Fusion plugin ecosystem: registry, lifecycle, MCP server, Claude adaptation"
     homepage "https://github.com/dahai80/fusion-plugins-ecosystem"
     url "https://github.com/dahai80/fusion-plugins-ecosystem/archive/refs/tags/v0.10.0.tar.gz"
-    sha256 "f168bff048f800f8c68e3adcc2d1e1a0321fdd3b180b58be646a4a5e821dbad4"
+    sha256 "PLACEHOLDER_SHA256"
     license "Apache-2.0"
     head "https://github.com/dahai80/fusion-plugins-ecosystem.git", branch: "main"
 
     depends_on "python@3.12"
+
+    include Language::Python::Virtualenv
 
     # ARM64-native wheels — must be pre-built for macOS arm64
     # (fusion-mlx tap convention; regenerated on dependency changes)
