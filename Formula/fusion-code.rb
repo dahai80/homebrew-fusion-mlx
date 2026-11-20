@@ -1,7 +1,7 @@
 class FusionCode < Formula
     desc "Local-first AI coding agent — Anthropic-compatible CLI over any endpoint or local MLX"
     homepage "https://github.com/dahai80/fusion-code"
-    version "0.8.5"
+    version "0.8.6"
     license "AGPL-3.0-or-later"
 
     base_url = "https://github.com/dahai80/fusion-code/releases/download/v#{version}"
@@ -9,21 +9,21 @@ class FusionCode < Formula
     on_macos do
         on_arm do
             url "#{base_url}/fusion-code-#{version}-darwin-arm64.tar.gz"
-            sha256 "38cbfef7f3d7fc96c8b74ced971b46f1406186a096db8eff3dfd834389adc8ea"
+            sha256 "d5f871e8c24bca49725139b6192cc31fc5a8a24b18c5fa13dfea562d2402496c"
         end
         on_intel do
             url "#{base_url}/fusion-code-#{version}-darwin-x64.tar.gz"
-            sha256 "e99f8db132f794d885f1336ddb7b0786e6e85b5c003fbedb0a5aeb8d3c154985"
+            sha256 "8c8fe70b0bac3c5d06ce9acc3ce35a0c4d6f662ea5e3aff046e12351cd733b8e"
         end
     end
     on_linux do
         on_arm do
             url "#{base_url}/fusion-code-#{version}-linux-arm64.tar.gz"
-            sha256 "7a59a2dbf3964f65a1b6eed0b7970497b110aa691846085ba8cab4135cadf29a"
+            sha256 "5b621b7ed28d424e0f8d118e6900bc4d025f6e824644bb1e9a775a1dc06bc166"
         end
         on_intel do
             url "#{base_url}/fusion-code-#{version}-linux-x64.tar.gz"
-            sha256 "1bbb11e83b7e317a3355e618c00f26bbe109ad0dee7bf89c12cf1841accf00f4"
+            sha256 "600e96e24a60249d4597e258366588de157f01cd0a644e5c88eb200cdccf4c62"
         end
     end
 
