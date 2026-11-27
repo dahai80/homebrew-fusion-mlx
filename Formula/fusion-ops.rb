@@ -11,7 +11,7 @@
 class FusionOps < Formula
     desc "Fusion ops-data flywheel — ops store API, broker, probe and jobs"
     homepage "https://github.com/dahai80/fusion-ops"
-    version "0.0.15"
+    version "0.0.16"
     license "MIT"
 
     base_url = "https://github.com/dahai80/fusion-ops/releases/download/v#{version}"
@@ -19,21 +19,21 @@ class FusionOps < Formula
     on_macos do
         on_arm do
             url "#{base_url}/fusion-ops-#{version}-darwin-arm64.tar.gz"
-            sha256 "2f3956314e3af94953011128d1b48a3761a19f482f8bca88901a424bf1d1e9d1"
+            sha256 "6970ee13785d242fd4779d10e3a0a48192a57be25649e93c94bbaf65b0326390"
         end
         on_intel do
             url "#{base_url}/fusion-ops-#{version}-darwin-amd64.tar.gz"
-            sha256 "0abd55dafa5b10894b0a9dcbc8bece476cc6215d3690f6fbcbe47011f263e3cc"
+            sha256 "f976ff6718cf77c0afeaf537cc7585b84315d93fb8a0f3c0b340412b06b9e3cb"
         end
     end
     on_linux do
         on_arm do
             url "#{base_url}/fusion-ops-#{version}-linux-arm64.tar.gz"
-            sha256 "81d69ca8373eeec2aa10f8f85164f6437683fb6b9e6ec1a78816cb7b27ee4ee4"
+            sha256 "22a77f827176ff5bf066a4acf47cbb141cd42bf51581a76c572da665300d7678"
         end
         on_intel do
             url "#{base_url}/fusion-ops-#{version}-linux-amd64.tar.gz"
-            sha256 "a75a8bc82180df97cff28fedf015c5fc9e985b583f7e71cb8523a0caebd9b2e9"
+            sha256 "ebaae0373ae266b4f32f63d46f1ec8a21537f35d0577e7468f5ade76134e56ec"
         end
     end
 
